@@ -27,12 +27,12 @@ class PostIndex extends Component {
   render() {
     return (
       <div className="row">
-        <div className="text-xs-right">
-          <Link to="/posts/new" className="btn btn-primary">
+        <h3>
+          Posts
+          <Link to="/posts/new" className="btn btn-primary pull-xs-right">
             Add a Post
           </Link>
-        </div>
-        <h3>Posts</h3>
+        </h3>
         <ul class="list-group">
           {this.renderPosts()}
         </ul>
